@@ -6,6 +6,7 @@ const itemsPerPage = 100;
 async function loadSpecies() {
     const response = await fetch("data/species.json");
     allSpecies = await response.json();
+    allSpecies.sort((a, b) => a.name.localeCompare(b.name));
     filteredSpecies = allSpecies; // default: show everything
     renderPage();
 }
