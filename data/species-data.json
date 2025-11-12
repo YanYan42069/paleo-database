@@ -29,5 +29,22 @@
     "weight": "6-10 Metric tonnes",
     "description": "",
     "discovery": ""
-  }
+  },
+
+  {
+  "id": "allosaurus-fragilis",
+  "name": "Allosaurus fragilis",
+  "meaning": "Different lizard",
+  "describedBy": "Othniel Charles Marsh (1877)",
+  "image": "allosaurus-fragilis.jpg",
+  "caption": "Restoration of Allosaurus fragilis in its natural habitat.",
+  "formation": "Morrison Formation",
+  "period": "Late Jurassic (~155–145 Ma)",
+  "location": "Utah, Colorado, Wyoming (USA)",
+  "length": "8.5–12 meters",
+  "weight": "1.5–2 tonnes",
+  "description": "",
+  "discovery": ""
+}
+
 ]
