@@ -49,3 +49,33 @@ footer {
 .alphabet-nav a:hover {
     text-decoration: underline;
 }
+#speciesList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 12px;
+    padding: 10px 20px;
+}
+
+.species-item {
+    padding: 8px 4px;
+}
+
+.species-item a {
+    text-decoration: none;
+    color: #0e3f68;
+    font-size: 16px;
+}
+
+.active-page {
+    background-color: #0e3f68;
+    color: white;
+    font-weight: bold;
+}
+
+#pagination {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 20px 0;
+}
+
