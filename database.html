@@ -5,35 +5,83 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Paleo Database | Species Index</title>
   <link rel="stylesheet" href="styles/style.css">
-  <style>
+<style>
+  body {
+    background-color: #f6f6f6;
+    font-family: "Segoe UI", Arial, sans-serif;
+  }
+
+  /* --- Search bar --- */
+  #searchBar {
+    text-align: right;
+    margin: 25px 8% 10px 8%;
+  }
+
+  #searchInput {
+    padding: 8px 12px;
+    font-size: 1em;
+    width: 240px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: 0.2s;
+  }
+
+  #searchInput:focus {
+    outline: none;
+    border-color: #30475e;
+    box-shadow: 0 0 3px #30475e;
+  }
+
+  /* --- Species list --- */
+  #speciesList {
+    text-align: left;
+    margin: 10px 8% 50px 8%;
+  }
+
+  h2 {
+    border-bottom: 2px solid #30475e;
+    color: #30475e;
+    margin-top: 30px;
+    font-size: 1.4em;
+    width: fit-content;
+  }
+
+  p {
+    margin: 4px 0 4px 15px;
+  }
+
+  .species-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #1e1e1e;
+    font-weight: 500;
+    padding: 4px 6px;
+    border-radius: 4px;
+    transition: all 0.15s ease;
+  }
+
+  .species-link:hover {
+    background-color: #e8eef3;
+    color: #30475e;
+    transform: translateX(4px);
+  }
+
+  /* --- Responsive tweaks --- */
+  @media (max-width: 600px) {
     #searchBar {
-      text-align: right;
-      margin: 20px 10% 0 10%;
+      text-align: center;
+      margin: 20px;
     }
+
     #searchInput {
-      padding: 8px;
-      font-size: 1em;
-      width: 250px;
+      width: 90%;
     }
+
     #speciesList {
-      text-align: left;
-      margin: 20px 10%;
+      margin: 10px 5%;
     }
-    h2 {
-      border-bottom: 2px solid #30475e;
-      color: #30475e;
-      margin-top: 30px;
-    }
-    .species-link {
-      text-decoration: none;
-      color: #222;
-      font-weight: bold;
-    }
-    .species-link:hover {
-      text-decoration: underline;
-      color: #30475e;
-    }
-  </style>
+  }
+</style>
 </head>
 <body>
   <header>
