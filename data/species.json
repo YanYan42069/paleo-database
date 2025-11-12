@@ -4,7 +4,7 @@
   { "name": "Achillobator giganticus", "url": "species/achillobator-giganticus.html" },
   { "name": "Allosaurus fragilis", "url": "species/allosaurus-fragilis.html" },
   { "name": "Allosaurus europaeus", "url": "species/allosaurus-europaeus.html" },
-  { "name": "Tyrannosaurus Rex", "url": "species/tyrannosaurus-rex.html" },
+  { "name": "Tyrannosaurus Rex", "url": "species/template.html?name=tyrannosaurus-rex" },
   { "name": "Baryonyx walkeri", "url": "species/baryonyx-walkeri.html" },
   { "name": "Stegosaurus stenops", "url": "species/stegosaurus-stenops.html" },
   { "name": "Triceratops horridus", "url": "species/triceratops-horridus.html" }
