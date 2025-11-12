@@ -3,26 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Paleo Database | Fossil Records</title>
+  <title>Paleo Database | Species Index</title>
   <link rel="stylesheet" href="styles/style.css">
   <style>
-    table {
-      border-collapse: collapse;
-      margin: 30px auto;
-      width: 80%;
-      background-color: white;
+    #searchBar {
+      text-align: right;
+      margin: 20px 10% 0 10%;
     }
-    th, td {
-      border: 1px solid #ccc;
-      padding: 10px;
+    #searchInput {
+      padding: 8px;
+      font-size: 1em;
+      width: 250px;
+    }
+    #speciesList {
       text-align: left;
+      margin: 20px 10%;
     }
-    th {
-      background-color: #30475e;
-      color: white;
+    h2 {
+      border-bottom: 2px solid #30475e;
+      color: #30475e;
+      margin-top: 30px;
     }
-    tr:nth-child(even) {
-      background-color: #f2f2f2;
+    .species-link {
+      text-decoration: none;
+      color: #222;
+      font-weight: bold;
+    }
+    .species-link:hover {
+      text-decoration: underline;
+      color: #30475e;
     }
   </style>
 </head>
@@ -32,49 +41,25 @@
     <nav>
       <a href="index.html">Home</a>
       <a href="database.html">Database</a>
-      <a href="#">Timeline</a>
+      <a href="#">Map</a>
       <a href="#">About</a>
     </nav>
   </header>
 
   <main>
-    <h2>Example Fossil Data</h2>
-    <p>This is a sample layout for how fossil information might appear later on.</p>
+    <div id="searchBar">
+      <input type="text" id="searchInput" placeholder="Search fossils..." onkeyup="filterSpecies()">
+    </div>
 
-    <table>
-      <tr>
-        <th>Name</th>
-        <th>Formation</th>
-        <th>Period</th>
-        <th>Location</th>
-        <th>Year Discovered</th>
-      </tr>
-      <tr>
-        <td><i>Allosaurus fragilis</i></td>
-        <td>Morrison Formation</td>
-        <td>Late Jurassic</td>
-        <td>Utah, USA</td>
-        <td>1877</td>
-      </tr>
-      <tr>
-        <td><i>Stegosaurus stenops</i></td>
-        <td>Morrison Formation</td>
-        <td>Late Jurassic</td>
-        <td>Colorado, USA</td>
-        <td>1887</td>
-      </tr>
-      <tr>
-        <td><i>Diplodocus longus</i></td>
-        <td>Morrison Formation</td>
-        <td>Late Jurassic</td>
-        <td>Wyoming, USA</td>
-        <td>1878</td>
-      </tr>
-    </table>
+    <div id="speciesList">
+      <!-- Populated dynamically -->
+    </div>
   </main>
 
   <footer>
     <p>© 2025 Paleo Database Project | Built with GitHub Pages</p>
   </footer>
+
+  <script src="scripts/database.js"></script>
 </body>
 </html>
