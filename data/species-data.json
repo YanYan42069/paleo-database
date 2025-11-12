@@ -13,5 +13,21 @@
     "weight": "4-6 Metric tonnes",
     "description": "",
     "discovery": ""
+  },
+
+  {
+    "id": "triceratops-horridus",
+    "name": "Triceratops horridus",
+    "meaning": "horrid three-horned face",
+    "describedBy": "Othniel Charles Marsh (1889)",
+    "image": "triceratops-horridus.jpg",
+    "caption": "Restoration of Triceratops horridus.",
+    "formation": " Hell Creek Formation",
+    "period": "Late Cretaceous (68-66 Ma),
+    "location": "Montana, South Dakota (USA),
+    "length": "up to 9 meters",
+    "weight": "6-10 Metric tonnes",
+    "description": "",
+    "discovery": ""
   }
 ]
