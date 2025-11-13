@@ -78,4 +78,42 @@ footer {
     gap: 8px;
     margin: 20px 0;
 }
+.columns {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px 40px;
+    width: 90%;
+    margin: 20px auto;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.letter-label {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 15px;
+    text-decoration: underline;
+}
+
+.species-link {
+    display: block;
+    font-size: 15px;
+}
+
+/* Mobile — stack columns */
+@media (max-width: 900px) {
+    .columns {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .columns {
+        grid-template-columns: 1fr;
+    }
+}
 
