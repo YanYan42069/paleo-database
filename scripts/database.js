@@ -78,3 +78,28 @@ function renderPagination(species, currentPage) {
 }
 
 loadSpecies().then(species => renderPage(species, 1));
+// 🔍 FILTER FUNCTION
+function filterSpeciesList(allSpecies) {
+    const input = document.getElementById("searchInput");
+    const query = input.value.toLowerCase();
+
+    const filtered = allSpecies.filter(s =>
+        s.name.toLowerCase().includes(query)
+    );
+
+    renderPage(filtered, 1); // Always reset to page 1 on search
+}
+
+// 🔧 Hook search bar listener after species load
+document.addEventListener("DOMContentLoaded", async () => {
+    const species = await loadSpecies();
+
+    // Initial render
+    renderPage(species, 1);
+
+    // Search listener
+    document.getElementById("searchInput").addEventListener("keyup", () => {
+        filterSpeciesList(species);
+    });
+});
+
